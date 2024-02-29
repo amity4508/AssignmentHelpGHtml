@@ -12,7 +12,7 @@
         justify-content: center;
     }
     .header {
-      height: 100rem;
+      height: 130rem;
     }
     /* .topbar img{
         margin-left: 0;
@@ -23,6 +23,16 @@
       .hero-section .order {
         display: flex;
         flex-direction: column-reverse;
+      }
+
+      .hero-section .card input{
+        padding:1rem !important;
+      }
+      .hero-section .card textarea{
+        padding:1rem !important;
+      }
+      .hero-section .card select{
+        padding:1rem !important;
       }
       .d-md-flex{
          display: flex;
@@ -49,6 +59,20 @@
           font-size: 2.5rem ;
           font-weight: 700;
       }
+      button{
+        background-color: var(--orange-dark);
+        padding: 1rem 1rem 1rem 1rem;
+        font-size: 1.6rem;
+      }
+      button{
+        background-color: var(--orange-dark);
+        padding: 1.3rem 3rem 1.3rem 3rem;
+        font-size: 2rem;
+      }
+      #customModal .modal-content{
+        margin-left: 25%;
+    
+      }
      
         
 }
@@ -68,9 +92,9 @@
         font-size: 1.7rem;
   
       }
-      .header {
-        height: 90rem;
-      }
+      /* .header {
+        height: 100rem;
+      } */
       .buttonTabs{
         margin-left: 10rem;
       }
@@ -123,7 +147,7 @@
         padding-right: 0;
       }
       .header {
-        height: 100rem;
+        height: 140rem;
       }
       .tabButtons{
         position: relative;
@@ -198,14 +222,14 @@
             font-size: 1.8rem;
             font-weight: 400;
           }
-         
-        
-          
+          #customModal .modal-content{
+            margin-left: 15%;
+          }
          
   }
   @media screen and (max-width: 375px) {
     .header {
-      height: 105rem;
+      height: 145rem;
     }
     .hero-section li{
       font-size: 1.6rem;
@@ -228,9 +252,9 @@
     .btn2{
         margin-left: 30%;
       }
-      .header {
-        height: 115rem;
-      }
+      /* .header {
+        height: 155rem;
+      } */
       .testiMonial .qoute{
        
         left: 5rem;
