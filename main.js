@@ -107,3 +107,12 @@ function displayModal(message) {
   };
 }
 
+// Aos
+AOS.init({
+  offset: 50,
+  duration: 200,
+  easing: 'ease-in',
+  delay: 300,
+});
+
+

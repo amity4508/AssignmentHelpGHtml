@@ -122,16 +122,23 @@ background-image: radial-gradient(
   font-weight: 600;
 
 }
+/* logo  */
+.topbarimg div{
+  /* border: 2px solid rgba(82, 73, 73, 0.493); */
+  width: 150px;
+  border-radius: 10px;
+  padding: 5px 10px 5px 10px;
+}
 .nav1 img{
 height: 6rem;
-width: 25rem;
 }
 .navbar button{
 border: none;
 }
 .nav1{
-    background-color: rgba(0, 0, 0, 0.562);
-    padding: 0.3rem;
+  background-color: rgba(2, 9, 31, 0.651);
+    /* background-color: rgba(0, 0, 0, 0.562); */
+    padding: 1rem;
 }
 .navbar-toggler-icon{
   color: white;
@@ -853,6 +860,70 @@ font-size: 1.6rem;
 }
 
 
+/* Course Css */
+.courses{
+  margin-bottom: 40px;
+  line-height: 20px;
+  font-weight: 400;
+  color:var(--orange);
+}
+.courseContainer{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  font-size: 16px;
+  align-items: center;
+  text-align: center;
+
+}
+.courseContainer img{
+  height: 200px;
+}
+
+.card{
+  border: none;
+  box-shadow: 2px 4px 7px gray;
+}
+.card img{
+transition: 0.5s ease-in;  
+
+}
+.card:hover img{
+  transform:scale(1.1);
+}
+.cardImg{
+  overflow: hidden;
+}
+.card-title{
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--dark-blue);
+}
+.card-title:hover{
+  color: var(--orange);
+}
+.head h2{
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: var(--orange-dark);
+  text-align: start;
+  margin: 50px 0px 40px 0px;
+
+}
+.head h2 span{
+  color: var(--dark-blue);
+}
+.btn-primary{
+  font-size: 18px;
+
+}
+.courseContainer .card{
+  width: 31%;
+}
+.card-text{
+  font-weight: 500;
+  color: #7c7c7c;
+}
 
 
 
