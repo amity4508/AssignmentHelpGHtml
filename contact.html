@@ -297,6 +297,9 @@
   </section>
   <!-- end contact hero seciton  -->
 
+
+  <!-- Contact us form  -->
+
   <section class="contact-form">
     <div class="container">
       <div class="row mt-5">
@@ -311,20 +314,27 @@
         <div class="col-lg-6 d-md-block d-sm-block d-block mt-5">
           <div class="form mt-4">
             <!-- form  -->
-            <form id="contact-form" enctype="multipart/form-data">
+            <form  onsubmit="sendEmail(); reset(); return false;">
               <div class="mb-3 d-flex gap-4">
+
+                <div class="mb-3 w-100">
+                  <label for="">Name</label>
+                  <input type="text" name="name" id="name" class="form-control mb-3 mt-2 " required placeholder="Your Email">
+                </div>
+
                 <div class="mb-3 w-100">
                   <label for="">Email Address</label>
-                  <input type="email" name="email" class="form-control mb-3 mt-2 " required placeholder="Your Email">
+                  <input type="email" name="email" id="email" class="form-control mb-3 mt-2 " required placeholder="Your Email">
                 </div>
+
                 <div class="mb-3 w-100">
                   <label for="">Subject Name</label>
-                  <input type="text" name="subjectName" id="subjectName" class="form-control mb-3 mt-2 " required
-                    placeholder="Type Your Subject">
+                  <input type="text" name="phone" id="phone" class="form-control mb-3 mt-2 " required
+                    placeholder="phone">
                 </div>
               </div>
               <div class="mt-5">
-                <textarea class="w-100 pb-5 px-3" name="description" id="description" rows="4" cols="20" required
+                <textarea class="w-100 pb-5 px-3" name="message" id="message" rows="4" cols="20" required
                   placeholder="Message"></textarea>
               </div>
               <div class="mb-3 d-flex gap-4 mt-5 ">
@@ -338,6 +348,22 @@
           </div>
         </div>
       </div>
+
+
+      <form action="https://api.web3forms.com/submit" method="POST">
+
+        <input type="hidden" name="access_key" value="d42dcce6-0c72-4ab9-b357-f09de74e8d8c">
+           <label for="">Name</label>
+        <input type="text" name="name" required>
+        <label for="">email</label>
+        <input type="email" name="email" required>
+        <label for="">message</label>
+        <textarea name="message" required></textarea>
+      
+        <button type="submit">Submit Form</button>
+    
+    </form>
+    
 
       <!-- <div class="map ">
             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3505.1494500934973!2d77.2247403!3d28.5352273!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce22135f80b65%3A0x96b4c7a729869876!2sTriveni%20Complex!5e0!3m2!1sen!2sin!4v1697457103177!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -420,7 +446,7 @@
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-
+     <script src="https://smtpjs.com/v3/smtp.js"></script>
   <!-- custom js  -->
   <script src="main.js"></script>
   <script src="swiper.js"></script>

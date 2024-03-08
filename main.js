@@ -116,3 +116,23 @@ AOS.init({
 });
 
 
+// ----smpt
+
+function sendEmail(){
+
+  Email.send({
+    Host : "smtp.smpt.gmail.com",
+    Username : "amity4508@gmail.com",
+    Password : "8808466347",
+    To : 'amit1001009@gmail.com',
+    From : document.getElementById("email").value ,
+    Subject : "new contact form enquiry",
+    Body : "Name:" + document.getElementById("name").value
+    + "<br> Email" + document.getElementById("email").value
+    + "<br> Phone No" + document.getElementById("phone").value
+    + "<br> Message" + document.getElementById("message").value 
+}).then(
+  message => alert("Message Sent Succesfully")
+);
+}
+
