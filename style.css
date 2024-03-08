@@ -168,6 +168,9 @@ border: none;
 .nav-link:hover{
   color:var(--orange-dark);
 }
+.buttonTabs .nav-link{
+  margin-right: 0rem;
+}
 /* dropdown */
 
 .dropdown-menu{
@@ -222,16 +225,21 @@ color: white;
 /* btn2  */
 .btn2{
   border-radius: 0.5rem;
-  background-color:var(--orange);
   width: 10rem;
   padding: 0.5rem 0.5rem;
   text-align: center;
   transition: 0.2s;
 
 }
-.btn2:hover{
-  background-color:var(--orange-dark);
+.nav1right .btn2 {
+  border-radius: 0.5rem;
+  background-color:rgba(255, 255, 255, 0);
+
 }
+
+/* .btn2:hover{
+  background-color:var(--orange-dark);
+} */
 a{
   text-decoration: none;
 }
@@ -324,15 +332,15 @@ textarea{
 
 button{
   background-color: var(--orange-dark);
-  padding: 1rem 3rem 1rem 3rem;
+  /* padding: 1rem 3rem 1rem 3rem; */
   font-size: 2rem;
   color: var(--white);
   border: none;
   font-weight: 500;
 }
-button:hover{
+/* button:hover{
 background-color: var(--orange);
-}
+} */
 
 
 
@@ -499,26 +507,32 @@ input[type="date"] {
   color: var(--orange-dark);
 }
 
+/*   tabs pills */
+.nav-pills{
+  border-bottom: 3px solid gray;
+}
 
 .nav-pills .nav-link{
-  text-align: justify;
-  background-color: rgb(236, 236, 236);
-  padding: 1rem 1rem 1rem 1rem;
-  width:100%;
+
+  /* width:100%; */
   transition: 0.5s ease-in-out;
   font-size: 1.8rem;
   font-weight: 600;
+  border-radius: 0px;
+
 }
 .nav-pills .nav-link:hover{
-  background-color: var(--orange);
-  color: var(--white);
+  color: blue;
+  background-color: rgba(255, 255, 255, 0);
   
 }
 
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
-  background-color: var(--dark-blue);
+  background-color: rgba(255, 255, 255, 0);
+  border-bottom: 3px solid rgb(25, 25, 255);
+  border-radius: 0px;
   width:auto;
-  padding: 1rem 1rem 1rem 1rem;
+  color: rgb(2, 91, 207);
 }
 
 /* onlineAssignment start */
@@ -861,6 +875,17 @@ font-size: 1.6rem;
 
 
 /* Course Css */
+
+/* hero left  */
+.heroleft img{
+  height: 300px;
+}
+
+.buttonTabs button{
+width: auto;
+padding: 4px 0px 4px 0px;
+
+}
 .courses{
   margin-bottom: 40px;
   line-height: 20px;
@@ -877,12 +902,13 @@ font-size: 1.6rem;
 
 }
 .courseContainer img{
-  height: 200px;
+  height: 260px;
+
+  border-radius: 4px;
 }
 
 .card{
   border: none;
-  box-shadow: 2px 4px 7px gray;
 }
 .card img{
 transition: 0.5s ease-in;  
@@ -924,6 +950,31 @@ transition: 0.5s ease-in;
   font-weight: 500;
   color: #7c7c7c;
 }
+
+
+
+/* tab img */
+.tabIMg img{
+  height: 400px;
+
+}
+.tabBtn a{
+  background-color: rgba(9, 102, 237, 1) ;
+  color: white;
+  font-size: 1.8rem;
+  padding: 6px 8px 8px 8px;
+  border-radius: 5px;
+}
+.TabCard .card h5{
+  text-align: start;
+  padding: 0px;
+  margin-top: 8px;
+}
+.TabCard .card p{
+  text-align: start;
+  padding: 0px;
+}
+
 
 
 
