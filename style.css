@@ -945,6 +945,8 @@ transition: 0.5s ease-in;
 }
 .courseContainer .card{
   width: 31%;
+  min-height: 340px;
+  max-height: 340px;
 }
 .card-text{
   font-weight: 500;
