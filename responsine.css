@@ -233,7 +233,19 @@
           .courseContainer .card{
             width: 100%;
           }
-         
+          .heroleft img {
+            height: 200px;
+           
+          } 
+          .head h2{
+            font-size: 2.6rem;
+          }
+          .onlineAssignment h2{
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--orange-dark);
+          }
+        
   }
   @media screen and (max-width: 375px) {
     .header {
@@ -253,6 +265,11 @@
       font-size: 1.6rem;
       font-weight: 400;
     }
+    .heroleft img {
+      height: 200px;
+      width: 200px;
+     
+    } 
   }
 
   @media screen and (max-width: 320px) {
