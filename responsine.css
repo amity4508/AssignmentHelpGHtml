@@ -11,9 +11,9 @@
         text-align: center;
         justify-content: center;
     }
-    .header {
+    /* .header {
       height: 130rem;
-    }
+    } */
     /* .topbar img{
         margin-left: 0;
       } */
@@ -151,9 +151,9 @@
         padding-left: 0;
         padding-right: 0;
       }
-      .header {
+      /* .header {
         height: 140rem;
-      }
+      } */
       .tabButtons{
         position: relative;
         right: 5rem;
@@ -238,19 +238,28 @@
            
           } 
           .head h2{
-            font-size: 2.6rem;
+            font-size: 2.3rem;
           }
           .onlineAssignment h2{
             font-size: 1.5rem;
             font-weight: 800;
             color: var(--orange-dark);
           }
+
+          .beginnerCourse{
+            display: flex;
+            flex-direction: column;
+          }
+          .tabIMg img{
+            height: 280px;
+          
+          }
         
   }
   @media screen and (max-width: 375px) {
-    .header {
+    /* .header {
       height: 145rem;
-    }
+    } */
     .hero-section li{
       font-size: 1.6rem;
 

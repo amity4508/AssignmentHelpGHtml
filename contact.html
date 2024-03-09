@@ -142,91 +142,7 @@
 
 
 
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog ">
-        <div class="modal-content">
-          <div class="container">
-            <div class="row ">
-              <div class="col-sm-12 text-end">
-                <button type="submit" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="col-sm text-center">
-                <h3 id="servicesHeading">Assignment Help Support</h3>
-              </div>
-              <div class="row">
-                <div class="col">
-                  <div class="form mt-4">
-                    <!-- form --------------------------- -->
-                    <form id="email-form">
-                      <div class="mb-4">
-                        <label for="">Feeling stuck with a subject that you do not like?</label>
-                        <select name="category" class="form-select" required>
-                          <option value="">category</option>
-                          <option value="1">IT Coding</option>
-                          <option value="2">IT </option>
-                          <option value="3">NON-IT</option>
-                          <option value="3">Other</option>
-                        </select>
-                      </div>
-
-                      <div class="col mb-2 d-lg-flex gap-4">
-                        <div class="mb-4 w-100">
-                          <label for="" class="form-label">Email</label>
-                          <input type="email" name="email" class="form-control" placeholder="Enter email" required>
-                        </div>
-
-                        <div class="mb-4 w-100">
-                          <label for="" class="form-label">Contact Number</label>
-                          <input type="text" name="contact" class="form-control" placeholder="enter contact no.">
-                        </div>
-                      </div>
-                      <div class="col mb-2 d-lg-flex gap-4">
-                        <div class="mb-4 w-100">
-                          <label for="" class="form-label">Which subject would you like to discuss?</label>
-                          <input type="text" name="subject" class="form-control" placeholder="Subject">
-                        </div>
-                        <div class="mb-4 w-100">
-                          <label for="" class="form-label">No. of Words</label>
-                          <input type="text" name="word_count" class="form-control" placeholder="Word Count">
-                        </div>
-                      </div>
-                      <div class="mb-4">
-                        <label for="" class="form-label">Question?</label>
-                        <textarea name="question" class="form-control" placeholder="What can we help you?"
-                          required></textarea>
-                      </div>
-                      <div class="mb-4">
-                        <label for="" class="form-label">Description</label>
-                        <textarea name="description" rows="3" class="form-control" placeholder="Description"
-                          required></textarea>
-                      </div>
-                      <div class="col mb-2 d-lg-flex gap-4">
-                        <div class="mb-4 w-100">
-                          <label for="" class="form-label">Assignment Attechment</label>
-                          <input type="file" name="assignment_attachment" class="form-control" accept=".pdf,.doc,.docx" />
-                          <h5 class="mt-3">Only doc,docx,msword,zip and pdf file type allowe</h5>
-                        </div>
-                        <div class="mb-4  w-100">
-                          <label for="" class="form-label">Deadline</label>
-                          <input type="date" name="due_date" class="form-control" required>
-                        </div>
-                      </div>
-                      <button type="submit" id="send-button">Send Expert</button>
-                    </form>
-
-
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </div>
-
-
-      </div>
-    </div>
+   
 
   </div>
 
@@ -271,22 +187,23 @@
         <div class="col-lg-6 d-md-block d-sm-block d-block mt-5">
           <div class="form mt-4">
             <!-- form  -->
+
             <form action="https://api.web3forms.com/submit" method="POST">
               <input type="hidden" name="access_key" value="905995ea-7150-466b-8b2a-1a433ea254d6">
 
-              <div class="mb-3 d-flex gap-4">
+              <div class="mb-3   gap-4">
 
-                <div class="mb-3 w-100">
+                <div class="col-sm-12 mb-3 w-100">
                   <label for="">Name</label>
                   <input type="text" name="name" id="name" class="form-control mb-3 mt-2 " required placeholder="Your Email">
                 </div>
 
-                <div class="mb-3 w-100">
+                <div class="col-sm-12 mb-3 w-100">
                   <label for="">Email Address</label>
                   <input type="email" name="email" id="email" class="form-control mb-3 mt-2 " required placeholder="Your Email">
                 </div>
 
-                <div class="mb-3 w-100">
+                <div class="col-sm-12 mb-3 w-100">
                   <label for="">Phone Number</label>
                   <input type="text" name="phone" id="phone" class="form-control mb-3 mt-2 " required
                     placeholder="phone">
