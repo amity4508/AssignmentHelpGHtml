@@ -97,55 +97,51 @@
   </div>
     <!-- offcannva ---------------------------------------------------- -->
 
+   
     <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
       id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
       <div class="offcanvas-header">
 
         <div class="d-md-block col-lg-8 topbarimg  ">
-          <img src="images2/Untitled design (5).png" class="img-fluid" alt="">
+          <img src="images2/footer-logo-new.svg" class="img-fluid" alt="">
         </div>
         <button data-bs-dismiss="offcanvas" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
       </div>
       <div class="offcanvas-body">
-        <ul class="navbar-nav container  mb-2 mb-lg-0">
+        <ul class="navbar-nav container  mb-2 mb-lg-0 m-5 ">
+
           <li class="nav-item dropdown">
-            <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link " href="index.html" role="button" aria-expanded="false">
               Home
             </a>
-            <ul class="navbar-nav container  mb-2 mb-lg-0">
-
-              <li class="nav-item dropdown">
-                <a class="nav-link " href="index.html" role="button" 
-                 >
-                  Coures
-                </a>
-               
-              </li>
-              <!-- <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            ABOUT US
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-          </ul>
-        </li> -->
-              <li class="nav-item">
-                <a class="nav-link" href="about.html">About Us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact Us</a>
-              </li>
-
-            </ul>
-          </li>
-        
-          </li>
           
+          </li>
+          <!-- <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        ABOUT US
+      </a>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Action</a></li>
+        <li><a class="dropdown-item" href="#">Another action</a></li>
+      </ul>
+    </li> -->
+    <li class="nav-item">
+      <a class="nav-link" href="index.html">Coures</a>
+    </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact Us</a>
+          </li>
 
         </ul>
       </div>
     </div>
+    <!-- end offcanva  ------------------------------------------------->
+
+
+
     <!-- Modal -->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog ">
@@ -275,7 +271,9 @@
         <div class="col-lg-6 d-md-block d-sm-block d-block mt-5">
           <div class="form mt-4">
             <!-- form  -->
-            <form  onsubmit="sendEmail(); reset(); return false;">
+            <form action="https://api.web3forms.com/submit" method="POST">
+              <input type="hidden" name="access_key" value="905995ea-7150-466b-8b2a-1a433ea254d6">
+
               <div class="mb-3 d-flex gap-4">
 
                 <div class="mb-3 w-100">
@@ -289,7 +287,7 @@
                 </div>
 
                 <div class="mb-3 w-100">
-                  <label for="">Subject Name</label>
+                  <label for="">Phone Number</label>
                   <input type="text" name="phone" id="phone" class="form-control mb-3 mt-2 " required
                     placeholder="phone">
                 </div>
@@ -303,7 +301,7 @@
                 <!-- <div class="btn3 pt-3 align-items-center w-50 mt-5  ">
                     <button type="submit" class="">SUBMIT</button>
                   </div> -->
-                <button type="submit" class="">SUBMIT</button>
+                <button type="submit" class="p-2 ">SUBMIT</button>
               </div>
             </form>
           </div>
@@ -311,40 +309,7 @@
       </div>
 
 
-      <form action="https://api.web3forms.com/submit" method="POST">
-
-        <input type="hidden" name="access_key" value="905995ea-7150-466b-8b2a-1a433ea254d6">
-        <div class="mb-3 d-flex gap-4">
-
-          <div class="mb-3 w-100">
-            <label for="">Name</label>
-            <input type="text" name="name" id="name" class="form-control mb-3 mt-2 " required placeholder="Your Email">
-          </div>
-
-          <div class="mb-3 w-100">
-            <label for="">Email Address</label>
-            <input type="email" name="email" id="email" class="form-control mb-3 mt-2 " required placeholder="Your Email">
-          </div>
-
-          <div class="mb-3 w-100">
-            <label for="">Subject Name</label>
-            <input type="text" name="phone" id="phone" class="form-control mb-3 mt-2 " required
-              placeholder="phone">
-          </div>
-        </div>
-        <div class="mt-5">
-          <textarea class="w-100 pb-5 px-3" name="message" id="message" rows="4" cols="20" required
-            placeholder="Message"></textarea>
-        </div>
-        <div class="mb-3 d-flex gap-4 mt-5 ">
-
-          <!-- <div class="btn3 pt-3 align-items-center w-50 mt-5  ">
-              <button type="submit" class="">SUBMIT</button>
-            </div> -->
-          <button type="submit" class="">SUBMIT</button>
-        </div>
-    
-    </form>
+  
     
 
       <!-- <div class="map ">
@@ -359,11 +324,14 @@
       <div class="row">
         <div class="col-sm-12">
           <div class="col-sm logo">
-            <a href="index.html"><img src="images2/Untitled design (5).png" class="img-fluid" alt=""></a>
+            <a href="index.html"><img src="images2/footer-logo-new.svg" class="img-fluid" alt="">
+            </a>
           </div>
           <div class="col-sm mt-2">
             <p><a href="mailto:training@teachercool.com"><i class="fa-solid fa-envelope"></i> - training@teachercool.com</a></p>
-
+            <p> <span><i class="fa-solid fa-location-dot"></i></span> - B-104, Second Floor, Phase-I Panchsheel Park
+              Malviya Nagar ,
+              Near Triveni Complex New Delhi - 110017</p>
 
           </div>
           <div class="socialMedia mt-5">
@@ -396,12 +364,13 @@
       </div>
 
       <div class="copyRight mt-5">
-        <h6>MyAssignmentHelpSupport Rated 9.3/10 based on <span>83 Reviews</span> Copyright 2023 |
-          www.assignmenthelpsupport.com | All rights reserved.</h6>
+        <h6>TeacherCool Rated 9.3/10 based on <span>83 Reviews</span> Copyright 2023 |
+          www.teachercool.com | All rights reserved.</h6>
       </div>
-    </div>
-  </section>
 
+    </div>
+
+  </section>
 
   <!-- top-button  -->
   <label id="top-button"><span><i>^</i></span></label>
