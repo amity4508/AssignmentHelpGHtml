@@ -110,9 +110,8 @@ function displayModal(message) {
 // Aos
 AOS.init({
   offset: 30,
-  duration: 200,
+  duration: 10,
   easing: 'ease-in',
-  delay: 10,
 });
 
 
@@ -136,3 +135,39 @@ function sendEmail(){
 );
 }
 
+
+
+function validateForm() {
+  var name = document.getElementById('name').value;
+  var email = document.getElementById('email').value;
+  var phone = document.getElementById('phone').value;
+
+  // Validate Name
+  if (name.trim() === '') {
+    alert('Please enter your name');
+    return false;
+  }
+
+  // Validate Email
+  var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!emailRegex.test(email)) {
+    alert('Please enter a valid email address');
+    return false;
+  }
+
+  // Validate Phone Number
+  var phoneRegex = /^\d{10}$/; // Assuming a 10-digit phone number
+  if (!phoneRegex.test(phone)) {
+    alert('Please enter a valid 10-digit phone number');
+    return false;
+  }
+   // Validate Message
+   var words = message.trim().split(/\s+/).length;
+   if (words < 100) {
+     alert('Please enter a message with at least 100 words');
+     return false;
+   }
+
+  // All validation passed
+  return true;
+}

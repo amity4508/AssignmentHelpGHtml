@@ -22,7 +22,7 @@
       }
       .hero-section .order {
         display: flex;
-        flex-direction: column-reverse;
+        /* flex-direction: column-reverse; */
       }
 
       .hero-section .card input{
@@ -39,14 +39,12 @@
          flex-direction: row;
         gap: 0.5rem;
          }
-         .nav-pills .nav-link{
-          width: 100%;
-          }
+         .nav-pills{
+          border-bottom: none;
+         }
+       
          
-      .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
-        width: 100%;
-
-        }
+     
         .navTabs  button{
           margin: 0 1.5rem 0 0;
         }
@@ -158,18 +156,8 @@
         position: relative;
         right: 5rem;
       }
-      .nav-pills .nav-link{
-        width: 100%;
-        font-size: 1.6rem;
-        padding: 1rem 0.2rem 1rem 0.2rem;
-
-        }
-        .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
-          width: 100%;
-          font-size: 1.6rem;
-          padding: 1rem 0.2rem 1rem 0.2rem;
-  
-          }
+    
+       
 
           .navTabs  button{
             margin: 0 0.5rem 0 0;

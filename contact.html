@@ -35,17 +35,23 @@
    <div class=" nav1 ">
     <div class="container">
       <div class="row  topbar  mt-3 ">
-        <div class="d-md-block col-lg-8 topbarimg  ">
+        <div class="col-sm-6 col-md-6 topbarimg d-flex  justify-content-md-start justify-content-center ">
           <div> <a href="index.html"><img src="images2/logo.svg" class="img-fluid" alt=""></a></div>
         </div>
-        <div class="col-lg-4 topbar-right me-auto mb-2 ">
+        <div class="col-sm-6 col-lg-6  topbar-right me-auto mb-2 ">
           <div class="row mt-2 nav1right">
-            <div class="col-md-8 col-lg-8 text-white mt-2 topbar-text  ">
-              <h6>Need Help? click to Chat:</h6>
+            <div
+              class="socialMediatop text-white mt-2 topbar-text  d-flex align-items-center justify-content-md-end justify-content-center  gap-5 ">
+              <!-- <h6>Need Help? click to Chat: </h6> -->
+              <a href="#" class="socialMediaIcon "><i class="fa-brands fa-whatsapp "></i> </a>
+              <a href="#" class="socialMediaIcon"><i class="fa-brands fa-facebook "></i> </a>
+              <a href="#" class="socialMediaIcon"><i class="fa-brands fa-linkedin-in "></i> </a>
+              <a href="#" class="socialMediaIcon"><i class="fa-brands fa-instagram "></i> </a>
+
             </div>
-            <div class="col-sm-12 col-md-4 col-lg-3 maila btn2 ">
-              <a href="mailto:info@teachercool.com">training@teachercool.com</a>
-            </div>
+            <!-- <div class="col-sm-12 col-md-4 col-lg-3 maila btn2 ">
+              <a href="mailto:training@teachercool.com">training@teachercool.com </a>
+            </div> -->
           </div>
 
         </div>
@@ -188,39 +194,35 @@
           <div class="form mt-4">
             <!-- form  -->
 
-            <form action="https://api.web3forms.com/submit" method="POST">
+            <form action="https://api.web3forms.com/submit" method="POST" onsubmit="return validateForm()">
               <input type="hidden" name="access_key" value="905995ea-7150-466b-8b2a-1a433ea254d6">
-
-              <div class="mb-3   gap-4">
-
+          
+              <div class="mb-3 gap-4">
                 <div class="col-sm-12 mb-3 w-100">
-                  <label for="">Name</label>
-                  <input type="text" name="name" id="name" class="form-control mb-3 mt-2 " required placeholder="Your Email">
+                  <label for="name">Name</label>
+                  <input type="text" name="name" id="name" class="form-control mb-3 mt-2" placeholder="Your Name">
                 </div>
-
+          
                 <div class="col-sm-12 mb-3 w-100">
-                  <label for="">Email Address</label>
-                  <input type="email" name="email" id="email" class="form-control mb-3 mt-2 " required placeholder="Your Email">
+                  <label for="email">Email Address</label>
+                  <input type="email" name="email" id="email" class="form-control mb-3 mt-2" placeholder="Your Email">
                 </div>
-
+          
                 <div class="col-sm-12 mb-3 w-100">
-                  <label for="">Phone Number</label>
-                  <input type="text" name="phone" id="phone" class="form-control mb-3 mt-2 " required
-                    placeholder="phone">
+                  <label for="phone">Phone Number</label>
+                  <input type="text" name="phone" id="phone" class="form-control mb-3 mt-2" placeholder="Your Phone">
                 </div>
               </div>
+          
               <div class="mt-5">
-                <textarea class="w-100 pb-5 px-3" name="message" id="message" rows="4" cols="20" required
-                  placeholder="Message"></textarea>
+                <textarea class="w-100 pb-5 px-3" name="message" id="message" rows="4" cols="20" placeholder="Message"></textarea>
               </div>
-              <div class="mb-3 d-flex gap-4 mt-5 ">
-
-                <!-- <div class="btn3 pt-3 align-items-center w-50 mt-5  ">
-                    <button type="submit" class="">SUBMIT</button>
-                  </div> -->
-                <button type="submit" class="p-2 ">SUBMIT</button>
+          
+              <div class="mb-3 d-flex gap-4 mt-5">
+                <button type="submit" class="p-2">SUBMIT</button>
               </div>
             </form>
+          
           </div>
         </div>
       </div>
