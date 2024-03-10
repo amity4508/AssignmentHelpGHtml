@@ -4,9 +4,11 @@
   }
 
 
+
 }
 
   @media screen and (max-width: 991px) {
+  
     .topbarimg {
         text-align: center;
         justify-content: center;
@@ -242,6 +244,7 @@
             height: 280px;
           
           }
+       
         
   }
   @media screen and (max-width: 375px) {
@@ -264,9 +267,11 @@
     }
     .heroleft img {
       height: 200px;
-      width: 200px;
+      width: 260px;
      
     } 
+    
+   
   }
 
   @media screen and (max-width: 320px) {

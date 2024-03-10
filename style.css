@@ -168,6 +168,7 @@ border: none;
 .nav-link:hover{
   color:var(--orange-dark);
 }
+
 .buttonTabs .nav-link{
   margin-right: 0rem;
 }
@@ -775,7 +776,7 @@ height: 5rem
 .socialMediatop a:nth-child(2){
   color: #0127d1;
 }
-.socialMediatop a:nth-child(4){
+.socialMediatop a:nth-child(5){
 color: #bd3b07
 }
 

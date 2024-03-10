@@ -110,7 +110,7 @@ function displayModal(message) {
 // Aos
 AOS.init({
   offset: 30,
-  duration: 10,
+  duration: 200,
   easing: 'ease-in',
 });
 
