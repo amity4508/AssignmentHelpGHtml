@@ -27,6 +27,18 @@
   <link rel="stylesheet" href="responsine.css">
   <link rel="stylesheet" href="swiper.css">
   <link rel="stylesheet" href="contact.css">
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VHF4CR4GVW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-VHF4CR4GVW');
+</script>
+
+
+
 </head>
 
 <body>
@@ -201,9 +213,8 @@
           <div class="form mt-4">
             <!-- form  -->
 
-            <form action="https://api.web3forms.com/submit" method="POST" onsubmit="return validateForm()">
-              <input type="hidden" name="access_key" value="905995ea-7150-466b-8b2a-1a433ea254d6">
-
+            <form id="form" action="https://api.web3forms.com/submit" method="POST" onsubmit="return validateForm()">
+              <input type="hidden" name="access_key" value="603b2cb8-be82-4d14-a6c6-f173893df75d">
               <div class="mb-3 gap-4">
                 <div class="col-sm-12 mb-3 w-100">
                   <label for="name">Name</label>
@@ -225,6 +236,10 @@
                 <textarea class="w-100 pb-5 px-3" name="message" id="message" rows="4" cols="20"
                   placeholder="Message"></textarea>
               </div>
+              <input 
+              type="hidden" 
+              name="redirect" 
+              value="https://teachercool.com/thanks.html" />
 
               <div class="mb-3 d-flex gap-4 mt-5">
                 <button type="submit" class="p-2">SUBMIT</button>
@@ -284,7 +299,7 @@
       <div class="hr2"></div>
       <div class="row">
         <div class="col-sm mt-5">
-          <p><b>Disclaimer:</b> The the Training Matrails Teachercool
+          <p><b>Disclaimer:</b> The Training Matrails Teachercool
              should only be used as examples for students,
             they should not be turned in exactly as they are. These documents should only be used for research and
             reference purposes.</p>
